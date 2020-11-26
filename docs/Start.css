@@ -1,0 +1,13 @@
+body {
+    background-image: url(Verzeichnis/Stylish.png);
+    height: 100%;
+    width: 100%;
+}
+
+#Link {
+    position: absolute;
+    top: 450px;
+    left: 1000px;
+    height: 300px;
+    width: auto;
+}
