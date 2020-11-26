@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, footer, aside, section {
+    display: block;
+}
+
+body {
+    background-color: aquamarine;
+    text-align: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: yellow;
+    background-image: url(Verzeichnis/Reizenlernen.png); 
+    background-repeat: no-repeat;
+    height: 202px;
+    width: 490x;
+}
+
+#headerrechts {
+    background-color: red;
+    background-image: url(Verzeichnis/beimSkat.png);
+    background-repeat: no-repeat;
+    height: 202px;
+    width: 453px;
+    float: right;
+}
+
+#steuerunglinks {
+    /* background-color: blue; */
+    width: 220px;
+    float: left; 
+    padding-left: 1em;
+}
+
+#steuerungrechts {
+    background-color: red;
+    background-image: url(Verzeichnis/Zahlensagen.png);
+    border: 1px solid black;
+    float: right;
+    height: 260px;
+    width: 300px;
+    margin-right: 10px;
+}
+    
+section {
+    /* background-color: orange; */
+    margin-left: 230px;
+    margin-right: 230px;
+    padding-left: 1em;
+}
+
+#wrapper {
+    /* background-color: lightgray; */
+    width: 990px;
+    border: 2px solid black;
+    margin: 0 auto;
+    text-align: left;
+    background-image: url(Verzeichnis/3layerwhite.png);
+}
+
+.zahl {
+    text-align: center;
+}
+
+img {
+    height: 30px;
+    width: auto;
+}
+
+h2 {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+#steuerunglinks ul {
+    padding-top: 10px;
+    list-style-type: none;
+}
+
+#steuerunglinks ul ul {
+    padding-left: 2em;
+    padding-top: 10px;
+    list-style-type: square;
+}
+
+#steuerunglinks li {
+    padding-top: 10px;
+}
+
+#Bubentext {
+     position: absolute;
+     background: white;
+}

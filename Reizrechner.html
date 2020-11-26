@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <meta charset="utf-8" />
+     <title>Reizen lernen</title>
+     <meta name="description"
+           content="DIE Internetseite zum einfachen Lernen des Reizens beim Kultkartenspiel Skat!
+                   Sowohl per hilfreicher Tabelle als auch per passendem Rechner">
+     <link href="style.css" rel="stylesheet">
+     <script src="Reizrechner.js"></script>
+</head>
+<body>
+
+     <div id="wrapper">
+
+          <header>
+               <span id="headerrechts"></span>
+          </header>
+
+
+          <nav id="steuerunglinks">
+               <ul>
+                    <li>Reizen lernen mit verschiedenen Methoden</li>
+                    <ul>
+                         <li><a href="Anfang.html">Was ist Reizen?</a></li>
+                         <li><a href="Reiztabelle.html">Reiztabelle</a></li>
+                         <li><a href="Reizrechner.html">Reizrechner</a></li>
+                    </ul>
+               </ul>
+               <br><br>
+               <ul>
+                    <li>Über diese Seite</li>
+                    <ul>
+                         <li><a href="Motivation.html">Motivation</a></li>
+                         <li><a href="Ersteller.html">Ersteller</a></li>
+                    </ul>
+               </ul>
+          </nav>
+
+          <section>
+
+               <h3> Der Reizrechner - Dein Hilfsmittel für das Reizen </h3>
+               <br>
+
+               <p>Welche Farbe möchtest du spielen?</p>
+               <label for="Kreuz">Kreuz</label>
+               <input type="radio" id="Kreuz" name="Farbe" value="Kreuz"><br>
+               <label for="Pik">Pik</label>
+               <input type="radio" id="Pik" name="Farbe" value="Pik"><br>
+               <label for="Herz">Herz</label>
+               <input type="radio" id="Herz" name="Farbe" value="Herz"><br>
+               <label for="Karo">Karo</label>
+               <input type="radio" id="Karo" name="Farbe" value="Karo"><br>
+               <label for="Grand">Grand</label>
+               <input type="radio" id="Grand" name="Farbe" value="Grand"><br>
+
+               <br>
+               <br>
+               <label for="Kreuzbube"> Kreuzbube</label>
+               <input type="checkbox" id="Kreuzbube" name="Bube" value="Kreuzbube">
+               <br>
+               <label for="Pikbube"> Pikbube</label>
+               <input type="checkbox" id="Pikbube" name="Bube" value="Pikbube">
+               <br>
+               <label for="Herzbube"> Herzuzbube</label>
+               <input type="checkbox" id="Herzbube" name="Bube" value="Herzbube">
+               <br>
+               <label for="Karobube"> Karobube</label>
+               <input type="checkbox" id="Karobube" name="Bube" value="Karobube">
+               <br><br><br>
+               <input type="button" value="Rechnen" onmouseup="Bubenanzahl();" />
+               <br><br>
+               <p>Maximal erlaubter Reizwert: </p><div id="Bubentext">Drücke auf "Rechnen"!</div>
+               
+               <br><br><br><br>
+
+          </section>
+     </div>
+
+</body>
+</html>
