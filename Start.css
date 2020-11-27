@@ -5,9 +5,9 @@ body {
 }
 
 #Link {
-    position: absolute;
-    top: 450px;
-    left: 1000px;
+    position: relative;
+    bottom: 20%;
+    right: 20%;
     height: 300px;
     width: auto;
 }
