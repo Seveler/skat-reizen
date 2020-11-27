@@ -1,11 +1,13 @@
 body {
-    background-image: url(Verzeichnis/Stylish.png);
-    height: 100%;
-    width: 100%;
+     background-image: url(Verzeichnis/Stylish.png);
+     background-attachment: fixed;
+     background-size: cover;
 }
 
 #Link {
-    position: relative;
-    bottom: 20%;
-    right: 20%;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 30%;
+    /*background: red;*/
 }
