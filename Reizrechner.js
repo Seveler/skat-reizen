@@ -28,6 +28,6 @@ function Bubenanzahl() {
                document.getElementById("Bubentext").innerHTML = 2 * Farbe;
      }
      else
-          document.getElementById("Bubentext").innerHTML = "Gib deine gewünschte Spielfarbe an!";
+          document.getElementById("Bubentext").innerHTML = "Gib deine gew\u00fcnschte Spielfarbe an!";
      }
           
