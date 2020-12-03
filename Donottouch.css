@@ -1,0 +1,142 @@
+body {
+	
+}
+
+#start{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border: 2px solid black;
+    height: 20px;
+    width: 50px;
+    text-align: center;
+    visibility: visible;
+}
+
+#start:hover{
+    background: gray;
+}
+
+#end{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    border: 2px solid black;
+    height: 20px;
+    width: 50px;
+    text-align: center;
+    visibility: hidden;
+}
+
+#blue{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    background: blue;
+    height: 100px;
+    width: 500px;
+    visibility: hidden;
+}
+
+#red{
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    background: red;
+    height: 100px;
+    width: 500px;
+    visibility: hidden;
+}
+
+#green{
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    background: green;
+    height: 100px;
+    width: 500px;
+    visibility: hidden;
+}
+
+#victory{
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    background: white;
+    border: 2px solid black;
+    height: 20px;
+    width: 50px;
+    text-align: center;
+    visibility: hidden;
+}
+
+#victory:hover{
+    background: gray;
+}
+
+#up{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: white;
+    height: 100px;
+    width: 550px;
+    text-align: center;
+    visibility: hidden;
+}
+#down{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: white;
+    height: 100px;
+    width: 550px;
+    text-align: center;
+    visibility: hidden;
+}
+#left{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: white;
+    height: 550px;
+    width: 100px;
+    text-align: center;
+    visibility: hidden;
+}
+#right{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: white;
+    height: 550px;
+    width: 100px;
+    text-align: center;
+    visibility: hidden;
+}
+
+#hole{
+    position: absolute;
+    top: 50px;
+    left: 175px;
+    background: black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    visibility: hidden;
+}
+
+#ball{
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    background: blue;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    visibility: hidden;
+}
+
