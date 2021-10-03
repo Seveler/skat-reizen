@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <title>Einkaufsliste sortieren</title>
+
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+     <link href="MDL.css" rel="stylesheet">
+     <link rel="manifest" href="manifest.json">
+     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+     <script src="MDL.js"></script>
+
+</head>
+
+<body onbeforeunload="saveName();">
+     <!-- your content here... -->
+     <!-- Always shows a header, even in smaller screens. -->
+     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+          <header class="mdl-layout__header">
+               <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title" contenteditable="true" id="shopname">Supermarkt1</span>   <!-- onmouseout="saveName();" -->
+                    <!-- Add spacer, to align navigation to the right -->
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation. We hide it in small screens. -->
+                    <nav class="mdl-navigation mdl-layout--large-screen-only">
+                         <a class="mdl-navigation__link" href="index.html" id="l1">Supermarkt1</a>  <!-- Hier Link zu weitererem html dokument einfügen, zb. rewe.html -->
+                         <a class="mdl-navigation__link" href="index2.html" id="l2">Supermarkt2</a>
+                         <a class="mdl-navigation__link" href="index3.html" id="l3">Supermarkt3</a>
+                         <a class="mdl-navigation__link" href="index4.html" id="l4">Supermarkt4</a>
+                    </nav>
+               </div>
+          </header>
+          <div class="mdl-layout__drawer">
+               <span class="mdl-layout-title">Einkaufsliste sortieren</span>
+               <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="index.html" id="e1">Supermarkt1</a>
+                    <a class="mdl-navigation__link" href="index2.html" id="e2">Supermarkt2</a>
+                    <a class="mdl-navigation__link" href="index3.html" id="e3">Supermarkt3</a>
+                    <a class="mdl-navigation__link" href="index4.html" id="e4">Supermarkt4</a>
+               </nav>
+          </div>
+          <main class="mdl-layout__content">
+               <div class="page-content">
+
+                    <!-- Your content goes here -->
+                    <div class="background_products" id="explain">
+                         <h6 style="color:#3757bf;">Information</h6>
+                         <p>
+                              Diese App soll dabei helfen, beim Einkaufen alle Produkte in passender Reihenfolge zu finden.
+                              Daher kann im ersten Fenster ein eigenes Sortiement erstellt werden, welches die Reihenfolge der Produkte im Laden
+                              wiederspiegelt. Hier kann nach und nach das gesamte Portfolio des Nutzers in einem Laden eingetragen werden und
+                              sollte in der Reihenfolge notiert werden, in welcher die Produkte im Laden auftauchen.
+                         </p>
+                         <p>
+                              Vor dem Supermarktbesuch
+                              wird dann das zweite Fenster verwendet, in dem Produkte aus dem Sortiement ausgewählt und der Einkaufsliste hinzugefügt werden.
+                              Bei der Auswahl muss nicht auf die Reihenfolge geachtet werden und die Liste kann beliebig oft erweitert werden.
+                         </p>
+                         <p>
+                              Für den Ladenbesuch selbst muss im letzten Fenster auf "Sortieren" gedrückt werden und die Produkte erscheinen nach der
+                              oben erstellten Reihenfolge des Sortiements. Insgesamt sind vier Speicherplätze für vier verschiedene Einkaufsläden nutzbar.
+                         </p>
+
+                    </div>
+                         <div class="background_products">
+                              <button type="submit" onclick="showInfo();" id="information">
+                                   i
+                              </button>
+                              <h4 class="titles">Sortiement erstellen:</h4>
+                              <p class="mdl-textfield__input" contenteditable="true" id="test1"></p>
+                              <!--<form onsubmit="addContent();">-->
+                              <!--
+           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="product_input">
+                <label class="mdl-textfield__label" for="sample3">Produkte hinzufügen ...</label>
+           </div>
+          -->
+                              <p></p>
+                              <button type="submit" onclick="addContent();" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                                   Speichern
+                              </button>
+
+                              <p></p>
+                              <!--
+          <button type="submit" onclick="writeContent();" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+               Sortiement zeigen
+          </button>
+
+          <p></p>
+          -->
+
+                              <div id="schreiben"></div>
+                              <button type="submit" onclick="deleteContent();" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                                   Sortiement löschen
+                              </button>
+                         </div>
+
+                         <div class="background_products">
+                              <h4 class="titles">Einkaufsliste zusammenstellen:</h4>
+                              <input class="mdl-textfield__input" type="text" name="product_list" list="product_list" id="selection_input" onchange="chooseProduct()">
+                              <datalist id="product_list"></datalist>
+                              <p></p>
+
+                              <div id="selection_list"></div>
+
+                              <p></p>
+                              <button type="submit" onclick="deleteSelection();" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                                   Einkaufsliste löschen
+                              </button>
+                         </div>
+
+                         <div class="background_products">
+                              <h4 class="titles">Sortierte Einkaufsliste:</h4>
+                              <button type="submit" onclick="sortList();" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                                   Sortieren
+                              </button>
+                              <p></p>
+                              <div id="sorted_list"></div>
+
+                              <!-- Sorted Purchase List -->
+                              <ul class="demo-list-control mdl-list"></ul>
+                         </div>
+                    </div>
+           </main>
+      </div>
+
+</body>
+
+</html>
