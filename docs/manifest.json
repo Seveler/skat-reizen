@@ -1,0 +1,10 @@
+{
+     "name": "Einkaufsliste sortieren",
+     "short_name": "Liste sortieren",
+     "theme_color": "#3757bf",
+     "background_color": "#e8e8e8",
+     "display": "fullscreen",
+     "orientation": "portrait",
+     "scope": "/",
+     "start_url": "/"
+}

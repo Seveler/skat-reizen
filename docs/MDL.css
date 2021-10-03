@@ -1,0 +1,48 @@
+﻿body {
+     background-color: #e8e8e8;
+     font-family: Comic Sans MS;
+}
+
+.demo-list-control {
+     width: 300px;
+}
+
+.demo-list-radio {
+     display: inline;
+}
+
+.titles {
+     font-family: Comic Sans MS;
+}
+
+.background_products {
+     background-color: white;
+     /*border: 1px solid #F8F8F8;*/
+     border-radius: 3px;
+     padding: 10px;
+     margin: 20px;
+     box-shadow: 2px 2px 2px #A8A8A8; /*, -1px -1px #A8A8A8*/
+     font-family: Comic Sans MS;
+}
+
+.numbers {
+     border: none;
+}
+
+#information {
+     background-color: white;
+     border: 1px solid black;
+     border-radius: 50%;
+     float: right;
+     display: inherit;
+}
+
+     #information:hover {
+          cursor: pointer;
+          background-color: #3757bf;
+          color: white;
+     }
+
+#explain {
+     display: none;
+}
