@@ -101,7 +101,7 @@ window.onload = function () {
                //alert("default");
                
      }
-     // ab hier wird nicht mehr ausgeführt, wenn index2.html aufgerufen wird
+     // ab hier wird nicht mehr ausgefÃ¼hrt, wenn index2.html aufgerufen wird
      //alert("shopnames: " + shopnames[0] + shopnames[1]);
      
      //#############
@@ -284,7 +284,7 @@ function writeContent() {
 function deleteContent() {
 
      if (confirm('Gespeichertes Sortiement wirklich entfernen?')) {
-          // jede Funktion müsste zum Updaten durchlaufen werden, aufrufen funktioniert allerdings nicht
+          // jede Funktion mÃ¼sste zum Updaten durchlaufen werden, aufrufen funktioniert allerdings nicht
           localStorage.removeItem(itemname);
           list = [];
           list[50] = 0;
@@ -310,7 +310,7 @@ function deleteContent() {
 
 function deleteSelection() {
 
-     if (confirm('Einkaufsliste löschen?')) {
+     if (confirm('Einkaufsliste lÃ¶schen?')) {
           // clear selected list
           localStorage.removeItem(sel_itemname);
           selected_product = [];
@@ -350,7 +350,7 @@ function chooseProduct() {
                     //alert("keine zahl");
                     selection_list.innerHTML += '<p><input class="numbers" type="number" id="quantity' + i.toString() + '" value="1" name="quantity" min="1" max="9999"> ' + selected_product[i].toString() + '</p>'; //'<li>' + selected_product[i].toString() + '</li>';
                } else {
-                    selection_list.innerHTML += '<p><input class="numbers" type="number" id="quantity' + i.toString() + '" value="' + num_selected_product[i].toString() + '" name="quantity" min="1" max="9999"> ' + selected_product[i].toString() + '</p>'; //'<li>' + selected_product[i].toString() + '</li>';
+                    selection_list.innerHTML += '<p><input class="numbers" type="number" id="quantity' + i.toString() + '" value="' + num_selected_product[i] + '" name="quantity" min="1" max="9999"> ' + selected_product[i].toString() + '</p>'; //'<li>' + selected_product[i].toString() + '</li>';
                }
           }
           //selection_list.innerHTML += '</ul>';
@@ -368,7 +368,7 @@ function sortList() {
      let sorted_list = [];
      let count_sorted_list = 0;
      let num_selected_product_sorted = [];
-     //alert("listeneintrag: " + list[1]);     // listeneinträge leer
+     //alert("listeneintrag: " + list[1]);     // listeneintrÃ¤ge leer
      
      for (var x = 0; x < list[50]; x += 1)
      {
